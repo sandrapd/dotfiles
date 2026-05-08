@@ -19,3 +19,10 @@ style = "bold purple"
 [directory]
 truncation_length = 3
 style = "bold cyan"
+
+# --- COMMAND DURATION ---
+# Show how long a command took to execute
+[cmd_duration]
+min_time = 2000  # Show only if it takes more than 2 seconds (in milliseconds)
+format = "took [$duration]($style) "
+style = "yellow bold"
