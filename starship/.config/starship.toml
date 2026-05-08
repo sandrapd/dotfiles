@@ -1,0 +1,21 @@
+# --- GENERAL SETTINGS ---
+# Don't print a new line at the beginning of the prompt
+add_newline = false
+
+# --- CHARACTER ---
+# The symbol shown at the start of the prompt
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+
+# --- GIT ---
+# Display current git branch
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+# --- DIRECTORY ---
+# Current working directory configuration
+[directory]
+truncation_length = 3
+style = "bold cyan"
