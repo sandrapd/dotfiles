@@ -23,6 +23,10 @@ alias tree="eza --tree --icons"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # Load fzf if it exists
 source <(fzf --zsh) # Set up fzf key bindings and fuzzy completion
 
+# --- DOTFILES AUTOMATION ---
+# Update Brewfile, add all changes, and sync with GitHub
+alias dotpush="cd ~/dotfiles && brew bundle dump --force && git add . && git commit -m 'Update dotfiles: $(date +\"%Y-%m-%d %H:%M\")' && git push && cd -"
+
 # --- PROMPT CONFIGURATION ---
 # NOTE: This must always be at the very end of the file to work correctly.
 eval "$(starship init zsh)"
